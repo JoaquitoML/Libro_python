@@ -130,10 +130,12 @@ print("la mesa grande no llega, tengo que achicar la lista")
 
 gente_que_no_entra = lista_de_invitados.pop()
 
-lista_de_invitados.pop("marina")
-lista_de_invitados.pop("paulo")
-lista_de_invitados.pop("natali")
-lista_de_invitados.pop("matilda")
-lista_de_invitados.pop("natali")
+gente_que_no_entra = "marina", "matilda", "luca" 
 
 print(lista_de_invitados)
+print(gente_que_no_entra)
+print(sorted(lista_de_invitados))
+print(len(lista_de_invitados))
+
+for lista_final in lista_de_invitados:
+    print(lista_final)
