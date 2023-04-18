@@ -139,3 +139,26 @@ print(len(lista_de_invitados))
 
 for lista_final in lista_de_invitados:
     print(lista_final)
+
+#   4-1: intro a LOOPS
+
+mis_pizzas_fav = ["champiñon", "pesto", "fugazeta"]
+
+for pisa_rica in mis_pizzas_fav:
+    print("me gusta la pizza de " + pisa_rica)
+print("me encanta la pizza!".upper())
+
+animales = ["perro", "gato", "caballo"]
+for mascotas in animales:
+    print("Me gustaría tener un " + mascotas)
+print("son muy lindos!".upper())
+
+numeros = []
+for cuadrados in range(1,11):
+    resultados = cuadrados**2
+    numeros.append(resultados)
+print(numeros)
+
+print(min(numeros))
+print(max(numeros))
+print(sum(numeros))
