@@ -162,3 +162,53 @@ print(numeros)
 print(min(numeros))
 print(max(numeros))
 print(sum(numeros))
+
+
+#   IF STATEMENTS. tests condicionales
+
+autos = ["audi", "toyota", "bmw"]
+print(autos)
+
+for auto in autos:
+    if auto == "audi":
+        print(auto.upper())
+
+    else:
+        print(auto.lower())
+
+#   saber si un elemento ESTA DENTRO DE UNA LISTA.
+
+print("audi" in autos)
+print("peugeot" in autos)
+
+print("peugeot" not in autos)
+print("audi" not in autos)
+
+edades = 19, 18, 17
+for edad in edades:
+    if edad >= 18:
+        print("Tienes edad suficiente para votar")
+        print("¿Te has inscripto ya?")
+    else:
+        print("No tienes edad suficiente para votar.")
+
+
+#   ingredientes para pisa 
+pizza_toppings = ["champiñones","tomates","aceitunas"]
+out_stock_toppings = ["choclo", "jamon"]
+toppings_caros = ["rucula","piña"]
+toppings_pedidos = "tomates", "aceitunas", "rucula", "choclo","jamon"
+
+
+for toppings in toppings_pedidos:
+    
+    if toppings in pizza_toppings:
+        print("añadiendo " + toppings + " a la pizza!")
+        
+    elif toppings in out_stock_toppings:
+        print ("lo siento, no contamos con " + toppings + " ahora.")
+    
+    elif toppings in toppings_caros:
+        print("este topping es mas caro, desea añadirlos igualmente?")
+
+print("pizza lista!")
